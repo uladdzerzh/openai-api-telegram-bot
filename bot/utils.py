@@ -1,3 +1,4 @@
+#This is the test message to check if branching works properly
 from __future__ import annotations
 
 import asyncio
@@ -340,7 +341,6 @@ def is_within_budget(config, usage, update: Update, is_inline=False) -> bool:
                                           update,
                                           is_inline=is_inline)
   return remaining_budget > 0
-
 
 def add_chat_request_to_usage_tracker(usage, config, user_id, used_tokens):
   """
